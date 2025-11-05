@@ -7,5 +7,8 @@ RUN npm install --legacy-peer-deps
 
 COPY . .
 
+RUN rm -rf .next
 RUN npm run build:ko
 RUN npm run build:en
+
+CMD ["echo", "Build complete"]
