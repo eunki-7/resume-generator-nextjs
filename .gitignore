@@ -117,3 +117,7 @@ dist
 
 # Docker
 *.pid
+
+# Output
+docs/
+out/
