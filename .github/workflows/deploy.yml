@@ -16,8 +16,13 @@ jobs:
 
       - name: Build with Docker
         run: |
-          docker build -t resume .
+          docker build --no-cache -t resume .
           docker run -v ${{ github.workspace }}/docs:/app/docs resume
+
+      - name: Sanity check (index language)
+        run: |
+          echo "payload/index.ts HEAD ===>"
+          head -n 20 payload/index.ts || true
 
       - name: Deploy Korean Resume
         run: |
