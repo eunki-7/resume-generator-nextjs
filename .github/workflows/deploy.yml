@@ -1,0 +1,42 @@
+name: Deploy Resume via Docker
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v3
+
+      - name: Build in Docker
+        run: |
+          docker build -t resume .
+          docker run -v ${{ github.workspace }}/docs:/app/docs resume
+
+      - name: Deploy Korean Resume
+        run: |
+          cd docs/ko
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git init
+          git remote add origin https://github.com/${{ github.repository }}.git
+          git checkout -b sub_ko
+          git add .
+          git commit -m "deploy: ko" || echo "No changes"
+          git push -u origin sub_ko --force
+
+      - name: Deploy English Resume
+        run: |
+          cd docs/en
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git init
+          git remote add origin https://github.com/${{ github.repository }}.git
+          git checkout -b sub_en
+          git add .
+          git commit -m "deploy: en" || echo "No changes"
+          git push -u origin sub_en --force
