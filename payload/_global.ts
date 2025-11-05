@@ -1,5 +1,5 @@
-import favicon from '../asset/favicon.ico';
-import previewImage from '../asset/preview.jpg';
+import favicon from '/favicon.ico';
+import previewImage from '/preview.jpg';
 import { IGlobal } from '../component/common/IGlobal';
 
 const title = 'Resume Eunki Kim';
