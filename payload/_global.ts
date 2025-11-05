@@ -1,7 +1,8 @@
-import favicon from '/favicon.ico';
-import previewImage from '/preview.jpg';
+
 import { IGlobal } from '../component/common/IGlobal';
 
+const favicon = '/favicon.ico';
+const previewImage = '/preview.jpg';
 const title = 'Resume Eunki Kim';
 const description = 'This is a Eunki Kim web resume.';
 
