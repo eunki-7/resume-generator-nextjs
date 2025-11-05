@@ -5,17 +5,24 @@
   "description": "Static HTML based RESUME made with next.js",
   "main": "index.js",
   "scripts": {
-    "dev:ko": "copy payload\\index_ko.ts payload\\index.ts && cross-env DEBUG=eksume:* next",
-    "dev:en": "copy payload\\index_en.ts payload\\index.ts && cross-env DEBUG=eksume:* next",
-    "prebuild:ko": "copy payload\\index.ts payload\\index_backup.ts",
-    "prebuild:en": "copy payload\\index.ts payload\\index_backup.ts && copy payload\\index_en.ts payload\\index.ts",
-    "build:ko": "npm run prebuild:ko && cross-env NODE_ENV=production next build && next export --outdir out && type NUL > out\\.nojekyll && if not exist docs\\ko mkdir docs\\ko && xcopy out\\* docs\\ko /E /Y /I && rmdir /s /q out && npm run postbuild",
-    "build:en": "npm run prebuild:en && cross-env NODE_ENV=production next build && next export --outdir out && type NUL > out\\.nojekyll && if not exist docs\\en mkdir docs\\en && xcopy out\\* docs\\en /E /Y /I && rmdir /s /q out && npm run postbuild",
-    "postbuild": "cd payload && del index.ts && rename index_backup.ts index.ts",
-    "deploy:ko": "npm run build:ko && cd docs/ko && git add . && git commit -m \"deploy: ko\" || echo No changes && git push",
-    "deploy:en": "npm run build:en && cd docs/en && git add . && git commit -m 'Deploy English resume' || echo No changes && git push",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "cross-env DEBUG=eksume:* next",
+  "dev:ko": "cp payload/index_ko.ts payload/index.ts && cross-env DEBUG=eksume:* next",
+  "dev:en": "cp payload/index_en.ts payload/index.ts && cross-env DEBUG=eksume:* next",
+
+  "prebuild:ko": "cp payload/index.ts payload/index_backup.ts",
+  "prebuild:en": "cp payload/index.ts payload/index_backup.ts && cp payload/index_en.ts payload/index.ts",
+
+  "build:ko": "npm run prebuild:ko && cross-env NODE_ENV=production next build && next export --outdir out && touch out/.nojekyll && mkdir -p docs/ko && cp -r out/* docs/ko && rm -rf out && npm run postbuild",
+  "build:en": "npm run prebuild:en && cross-env NODE_ENV=production next build && next export --outdir out && touch out/.nojekyll && mkdir -p docs/en && cp -r out/* docs/en && rm -rf out && npm run postbuild",
+
+  "postbuild": "cd payload && rm index.ts && mv index_backup.ts index.ts",
+
+  "deploy:ko": "npm run build:ko && cd docs/ko && git add . && git commit -m 'deploy: ko' || echo No changes && git push",
+  "deploy:en": "npm run build:en && cd docs/en && git add . && git commit -m 'Deploy English resume' || echo No changes && git push",
+
+  "test": "echo \"Error: no test specified\" && exit 1",
+  
+  "dev": "cross-env DEBUG=eksume:* next",
+
     "build": "next build",
     "prebuild": "npm install && npm run lint",
     "start": "next start",
