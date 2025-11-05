@@ -5,8 +5,8 @@
   "description": "Static HTML based RESUME made with next.js",
   "main": "index.js",
   "scripts": {
-  "dev:ko": "cp payload/index_ko.ts payload/index.ts && cross-env DEBUG=eksume:* next",
-  "dev:en": "cp payload/index_en.ts payload/index.ts && cross-env DEBUG=eksume:* next",
+  "dev:ko": "copy payload\\index_ko.ts payload\\index.ts && cross-env DEBUG=eksume:* next",
+  "dev:en": "copy payload\\index_en.ts payload\\index.ts && cross-env DEBUG=eksume:* next",
   "prebuild:ko": "cp payload/index.ts payload/index_backup.ts && cp payload/index_ko.ts payload/index.ts",
   "prebuild:en": "cp payload/index.ts payload/index_backup.ts && cp payload/index_en.ts payload/index.ts",
   "build:ko": "npm run prebuild:ko && cross-env NODE_ENV=production next build && next export --outdir out && touch out/.nojekyll && mkdir -p docs/ko && cp -r out/* docs/ko && rm -rf out && npm run postbuild",
