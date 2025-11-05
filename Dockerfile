@@ -9,6 +9,7 @@ COPY . .
 
 RUN rm -rf .next
 RUN npm run build:ko
+RUN rm -rf .next
 RUN npm run build:en
 
 CMD ["echo", "Build complete"]
