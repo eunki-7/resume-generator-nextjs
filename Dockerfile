@@ -21,4 +21,7 @@ RUN rm -rf .next
 # build English
 RUN npm run build:en
 
+RUN chown -R 1000:1000 /app/docs
+
 CMD ["echo", "✅ Build complete"]
+
