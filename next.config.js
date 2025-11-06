@@ -1,26 +1,30 @@
 /* eslint-disable */
 const { homepage } = require('./package.json');
 
-const isProd = process.env.NODE_ENV === 'production';
+const isGitHub = process.env.GITHUB_ACTIONS === 'true';
 const { RESUME_LANG } = process.env;
 
 let repo = '';
 if (homepage) {
   try {
-    repo = new URL(homepage).pathname.replace(/^\//, ''); // "resume_main"
+    const { pathname } = new URL(homepage);
+    repo = pathname.replace(/^\/|\/$/g, ''); // strip leading/trailing slash
   } catch {}
 }
 
 const subPath = RESUME_LANG === 'ko' ? 'ko' : 'en';
 
-// ✅ 로컬에서는 prefix 없음
-const basePath = isProd ? `/${repo}/${subPath}` : '';
-const assetPrefix = isProd ? `/${repo}/${subPath}` : '';
+let prefix = '';
+if (isGitHub && repo) {
+  prefix = `/${repo}/${subPath}`;
+} else if (isGitHub) {
+  prefix = `/${subPath}`;
+} else {
+  prefix = '';
+}
 
 module.exports = {
-  images: {
-    unoptimized: true,
-  },
-  basePath,
-  assetPrefix,
+  images: { unoptimized: true },
+  basePath: prefix,
+  assetPrefix: prefix,
 };
