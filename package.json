@@ -41,7 +41,7 @@
   "typedoc": "typedoc --excludeExternals"
   },
   "homepage": "https://eunki-7.github.io/resume_main",
-  
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/uyu423/resume-nextjs.git"

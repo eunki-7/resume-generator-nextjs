@@ -14,14 +14,8 @@ if (homepage) {
 
 const subPath = RESUME_LANG === 'ko' ? 'ko' : 'en';
 
-let prefix = '';
-if (isGitHub && repo) {
-  prefix = `/${repo}/${subPath}`;
-} else if (isGitHub) {
-  prefix = `/${subPath}`;
-} else {
-  prefix = '';
-}
+// ✅ only when GitHub Pages build
+const prefix = isGitHub && repo ? `/${repo}/${subPath}` : '';
 
 module.exports = {
   images: { unoptimized: true },
