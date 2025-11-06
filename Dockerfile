@@ -2,26 +2,23 @@ FROM node:16.16.0
 
 WORKDIR /app
 
-# Copy only package.json first for caching optimization
+# install
 COPY package*.json ./
 RUN npm install --legacy-peer-deps
 
-# Copy source code
+# copy source
 COPY . .
 
-# Clean previous caches
-RUN rm -rf .next
-RUN rm -rf docs/ko docs/en
+# clean
+RUN rm -rf .next docs/ko docs/en
 
-# Build Korean
-ENV RESUME_LANG=ko
+# build Korean
 RUN npm run build:ko
 
-# Clean again
+# clean cache so English는 절대 Korean JS 안 섞임
 RUN rm -rf .next
 
-# Build English
-ENV RESUME_LANG=en
+# build English
 RUN npm run build:en
 
-CMD ["echo", "Build complete"]
+CMD ["echo", "✅ Build complete"]

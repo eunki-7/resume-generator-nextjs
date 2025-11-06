@@ -26,9 +26,7 @@ jobs:
 
       - name: Deploy Korean Resume
         run: |
-          # Ensure docs/ko exists and has correct permissions
           mkdir -p docs/ko
-          chmod -R 777 docs/ko # Give full permissions to docs/ko directory
           cd docs/ko
           git init
           git config --global user.email "actions@github.com"
@@ -41,9 +39,7 @@ jobs:
 
       - name: Deploy English Resume
         run: |
-          # Ensure docs/en exists and has correct permissions
           mkdir -p docs/en
-          chmod -R 777 docs/en # Give full permissions to docs/en directory
           cd docs/en
           git init
           git config --global user.email "actions@github.com"
