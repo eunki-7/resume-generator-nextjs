@@ -1,24 +1,7 @@
-/* eslint-disable */
-const { homepage } = require('./package.json');
+const withImages = require('next-images');
 
-const isGitHub = process.env.GITHUB_ACTIONS === 'true';
-const { RESUME_LANG } = process.env;
-
-let repo = '';
-if (homepage) {
-  try {
-    const { pathname } = new URL(homepage);
-    repo = pathname.replace(/^\/|\/$/g, ''); // strip leading/trailing slash
-  } catch {}
-}
-
-const subPath = RESUME_LANG === 'ko' ? 'ko' : 'en';
-
-// ✅ only when GitHub Pages build
-const prefix = isGitHub && repo ? `/${repo}/${subPath}` : '';
-
-module.exports = {
+module.exports = withImages({
   images: { unoptimized: true },
-  basePath: prefix,
-  assetPrefix: prefix,
-};
+  assetPrefix: '.',
+  basePath: '',
+});
