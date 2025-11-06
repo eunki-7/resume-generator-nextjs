@@ -3,6 +3,9 @@ name: Deploy Resume via Docker
 on:
   push:
     branches: [ "main" ]
+    paths-ignore:
+      - 'README.md'
+      - 'README*.md'
 
 jobs:
   build:
