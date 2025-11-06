@@ -1,31 +1,26 @@
 /* eslint-disable */
-const withImages = require('next-images');
 const { homepage } = require('./package.json');
 
-const { NODE_ENV } = process.env;
+const isProd = process.env.NODE_ENV === 'production';
+const { RESUME_LANG } = process.env;
 
-module.exports = withImages({
-  assetPrefix: (() => {
-    if (NODE_ENV === 'production' && homepage) {
-      try {
-        console.log('> Detected homepage url in package.json');
-        const { pathname } = new URL(homepage);
-        if (pathname !== '/') {
-          console.log(`> Apply \'${pathname}\' to assetPrefix(subPath)`);
-          return '.';
-        }
-        return '.';
-      } catch {
-        console.log('> Can not parse homepage URL not apply assetPrefix(subPath)');
-        return '.';
-      }
-    }
-    return '.';
-  })(),
-});
-// withCSS({
-// webpack: config => {
-//   config.resolve.alias['@'] = __dirname;
-//   return config;
-// }
-// }),
+let repo = '';
+if (homepage) {
+  try {
+    repo = new URL(homepage).pathname.replace(/^\//, ''); // "resume_main"
+  } catch {}
+}
+
+const subPath = RESUME_LANG === 'ko' ? 'ko' : 'en';
+
+// ✅ 로컬에서는 prefix 없음
+const basePath = isProd ? `/${repo}/${subPath}` : '';
+const assetPrefix = isProd ? `/${repo}/${subPath}` : '';
+
+module.exports = {
+  images: {
+    unoptimized: true,
+  },
+  basePath,
+  assetPrefix,
+};
