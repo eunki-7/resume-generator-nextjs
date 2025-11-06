@@ -40,8 +40,7 @@
   "lint": "eslint \"component/**/*\" \"pages/**/*\" \"payload/**/*\" \"*.ts\" --fix",
   "typedoc": "typedoc --excludeExternals"
   },
-  "homepage": "https://eunki-7.github.io/resume_main",
-
+  "homepage": "https://eunki-7.github.io",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/uyu423/resume-nextjs.git"
