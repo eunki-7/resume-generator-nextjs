@@ -14,13 +14,14 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@v3
 
-      # ✅ 혹시 이전 빌드에서 남은 root 권한 docs가 있다면 삭제
+      # ✅ 기존 docs가 root로 남아있으면 절대 mkdir 안됨 → 반드시 삭제
       - name: Clean docs
         run: sudo rm -rf docs
 
       - name: Build with Docker
         run: |
           docker build --no-cache -t resume .
+          # ✅ uid=1000 로 실행 → 새로 생성되는 docs는 권한 문제 없음
           docker run -u 1000:1000 -v ${{ github.workspace }}/docs:/app/docs resume
 
       - name: Sanity check (index language)
