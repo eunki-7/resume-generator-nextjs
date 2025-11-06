@@ -12,7 +12,7 @@
 
 "build:ko": "npm run prebuild:ko && cross-env NODE_ENV=production next build && next export --outdir /app/docs/ko && mkdir -p /app/docs/ko && touch /app/docs/ko/.nojekyll && npm run postbuild",
 "build:en": "npm run prebuild:en && cross-env NODE_ENV=production next build && next export --outdir /app/docs/en && mkdir -p /app/docs/en && touch /app/docs/en/.nojekyll && npm run postbuild",
-
+"postbuild": "cd payload && rm index.ts && mv index_backup.ts index.ts",
   "deploy:ko": "npm run build:ko && cd docs/ko && git add . && git commit -m 'deploy: ko' || echo No changes && git push",
   "deploy:en": "npm run build:en && cd docs/en && git add . && git commit -m 'Deploy English resume' || echo No changes && git push",
 
