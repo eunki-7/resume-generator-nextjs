@@ -48,7 +48,7 @@ jobs:
           # ✅ 원래는 resume_main 저장소에 sub_ko 브랜치로 push했는데,
           # ✅ 아래 줄을 resume_ko_test 저장소로 main 브랜치에 push 하도록 변경
           # git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
-          git remote add origin https://x-access-token:${{ secrets.KO_REPO_TOKEN }}@github.com/eunki-7/resume_ko_test.git
+          git remote add origin https://x-access-token:${{ secrets.KO_REPO_TOKEN }}@github.com/eunki-7/resume_ko.git
           
           # ✅ sub_ko 대신 main 브랜치로 push
           git push -u origin main --force
@@ -67,7 +67,7 @@ jobs:
           # ✅ 원래는 resume_main 저장소에 sub_en 브랜치로 push했는데,
           # ✅ 아래 줄을 resume_en_test 저장소로 main 브랜치에 push 하도록 변경
           # git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
-          git remote add origin https://x-access-token:${{ secrets.EN_REPO_TOKEN }}@github.com/eunki-7/resume_en_test.git
+          git remote add origin https://x-access-token:${{ secrets.EN_REPO_TOKEN }}@github.com/eunki-7/resume_en.git
 
           # ✅ sub_en 대신 main 브랜치로 push
           git push -u origin main --force
