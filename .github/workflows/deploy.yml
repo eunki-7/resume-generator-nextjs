@@ -17,45 +17,55 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@v3
 
+      # ✅ 혹시 남아 있는 docs 삭제
       - name: Clean docs
         run: sudo rm -rf docs
 
       - name: Build with Docker
         run: |
           docker build --no-cache -t resume .
+          # 컨테이너 생성 (실행 X)
           docker create --name resume_container resume
+          # 컨테이너 안의 /app/docs → 호스트 ./docs 로 복사
           docker cp resume_container:/app/docs ./docs
+          # 컨테이너 삭제
           docker rm resume_container
 
       - name: Check docs content
         run: ls -R docs
 
-      ##########################################
-      # ✅ Deploy Korean Resume
-      ##########################################
       - name: Deploy Korean Resume
         run: |
           cd docs/ko
           git init
-          git config user.email "actions@github.com"
-          git config user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git checkout -b sub_ko
           git add .
           git commit -m "deploy: ko" || echo "No changes"
-          git branch -M main
+          
+          # ✅ 원래는 resume_main 저장소에 sub_ko 브랜치로 push했는데,
+          # ✅ 아래 줄을 resume_ko_test 저장소로 main 브랜치에 push 하도록 변경
+          # git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
           git remote add origin https://x-access-token:${{ secrets.KO_REPO_TOKEN }}@github.com/eunki-7/resume_ko_test.git
+          
+          # ✅ sub_ko 대신 main 브랜치로 push
           git push -u origin main --force
 
-      ##########################################
-      # ✅ Deploy English Resume
-      ##########################################
       - name: Deploy English Resume
         run: |
           cd docs/en
           git init
-          git config user.email "actions@github.com"
-          git config user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git checkout -b sub_en
           git add .
           git commit -m "deploy: en" || echo "No changes"
-          git branch -M main
+
+          # ✅ 원래는 resume_main 저장소에 sub_en 브랜치로 push했는데,
+          # ✅ 아래 줄을 resume_en_test 저장소로 main 브랜치에 push 하도록 변경
+          # git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
           git remote add origin https://x-access-token:${{ secrets.EN_REPO_TOKEN }}@github.com/eunki-7/resume_en_test.git
+
+          # ✅ sub_en 대신 main 브랜치로 push
           git push -u origin main --force
