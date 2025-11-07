@@ -50,7 +50,7 @@ jobs:
       ##########################################
       - name: Deploy English Resume
         run: |
-          cd ../en
+          cd docs/en
           git init
           git config user.email "actions@github.com"
           git config user.name "GitHub Actions"
