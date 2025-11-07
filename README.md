@@ -31,6 +31,7 @@ This project is a **Next.js + Static Export** based resume generator.
 |--------|-----|
 | 🇰🇷 Korean Live Demo | **https://eunki-7.github.io/resume_ko/** |
 | 🇺🇸 English Live Demo | **https://eunki-7.github.io/resume_en/** |
+| 🌍 Other Languages | Host your own version at `https://<your-github-username>.github.io/resume_<lang>/` |
 
 ---
 
@@ -41,7 +42,8 @@ This project is a **Next.js + Static Export** based resume generator.
 ```
 /assets
   ├── preview_ko.png
-  └── preview_en.png
+  ├── preview_en.png
+  └── preview_other.png # (Optional) For any additional language
 ```
 
 Example usage in README:
@@ -49,6 +51,7 @@ Example usage in README:
 ```markdown
 ![Korean Preview](assets/preview_ko.png)
 ![English Preview](assets/preview_en.png)
+![Other Language Preview](assets/preview_other.png)  <!-- Optional -->
 ```
 
 ---
@@ -170,4 +173,5 @@ MIT License
 
 ## ✅ Acknowledgments
 
-> Inspired by **Yowu (uyu423)** – https://github.com/uyu423/resume-nextjs
+Special thanks to **Yowu (uyu423)** for sharing the original open-source template:  
+https://github.com/uyu423/resume-nextjs
