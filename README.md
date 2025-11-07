@@ -97,6 +97,10 @@ npm run build:ko
 
 # English static build
 npm run build:en
+
+# Other language static build (optional)
+# Example: French / Japanese / Spanish
+npm run build:<lang>
 ```
 
 Build output:
@@ -104,6 +108,7 @@ Build output:
 ```
 docs/ko
 docs/en
+docs/<lang> # Other language (optional)
 ```
 
 ---
@@ -137,6 +142,7 @@ This project includes a fully automated deployment pipeline.
 |--------|---------|
 | `KO_REPO_TOKEN` | Push access to `resume_ko` |
 | `EN_REPO_TOKEN` | Push access to `resume_en` |
+| `OTHER_REPO_TOKEN`  (optional) | Push access to additional language repos such as `resume_jp`, `resume_fr`, etc. |
 | `SLACK_WEBHOOK_URL` (optional) | Slack notifications |
 
 ---
@@ -148,6 +154,7 @@ This project includes a fully automated deployment pipeline.
 | `resume_main` | Source + Build + CI/CD |
 | `resume_ko`   | Korean static export |
 | `resume_en`   | English static export |
+| `resume_<lang>` (optional) | Static export for any additional language (ex: `resume_jp`, `resume_fr`, ...) |
 
 ---
 
