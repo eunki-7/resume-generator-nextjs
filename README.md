@@ -49,8 +49,8 @@ This project is a **Next.js + Static Export** based resume generator.
 Example usage in README:
 
 ```markdown
-![Korean Preview](assets/preview_ko.png)
-![English Preview](assets/preview_en.png)
+![Korean Preview](assets/preview.png)
+![English Preview](assets/preview.png)
 ![Other Language Preview](assets/preview_other.png)  <!-- Optional -->
 ```
 
