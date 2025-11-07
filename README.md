@@ -82,6 +82,15 @@ PDF can be created manually or using `puppeteer`, `wkhtmltopdf`, or GitHub Actio
 
 ---
 
+## ✅ Development Environment
+
+This project was tested with the following versions:
+
+- Node.js: **v16.16.0**
+- NPM: **8.11.0**
+- Other versions may work, but these are confirmed stable for building and exporting static pages.
+---
+
 ## ✅ Development & Run
 
 ```bash
