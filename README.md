@@ -3,6 +3,7 @@
   <h2><b>Next.js Static Resume / CV Generator (Multi-Language | Developer Portfolio)</b></h2>
   <p>📌 A modern static resume & CV template built with Next.js and TypeScript — supports Korean, English, and any additional languages from a single codebase.</p>
   <p>✅ Docker Build • ✅ GitHub Actions CI/CD • ✅ Deploy to GitHub Pages • ✅ Perfect for Developer Portfolios</p>
+  <p><i>A fully open-source static resume & developer CV generator using Next.js and TypeScript — ideal for software, cloud, DevOps, and AI engineers.</i></p>
   <br/>
 
   <!-- Badges -->
