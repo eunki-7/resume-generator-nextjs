@@ -2,6 +2,27 @@ FROM node:16.16.0
 
 WORKDIR /app
 
+
+# ✅ Puppeteer 필수 리눅스 패키지 설치
+RUN apt-get update && apt-get install -y \
+  wget \
+  gnupg \
+  ca-certificates \
+  fonts-liberation \
+  libnss3 \
+  libxss1 \
+  libasound2 \
+  libatk1.0-0 \
+  libatk-bridge2.0-0 \
+  libcups2 \
+  libdrm2 \
+  libdbus-1-3 \
+  libxshmfence1 \
+  libnspr4 \
+  libgbm1 \
+  --no-install-recommends && \
+  rm -rf /var/lib/apt/lists/*
+
 # install
 COPY package*.json ./
 RUN npm install --legacy-peer-deps
