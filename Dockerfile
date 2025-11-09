@@ -15,7 +15,7 @@ RUN rm -rf .next docs/ko docs/en
 # build Korean
 RUN npm run build:ko
 
-# clean cache so English는 절대 Korean JS 안 섞임
+# clean caches
 RUN rm -rf .next
 
 # build English

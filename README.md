@@ -57,19 +57,16 @@ Example usage in README:
 
 ---
 
-## ✅ PDF Download (Optional Feature)
+## ✅ PDF Download
 
-You may add a PDF download button that links to a generated resume PDF.
+You can download a PDF version of your resume generated automatically by GitHub Actions.
 
-Example Button:
+| Language | PDF |
+|----------|-----|
+| 🇰🇷 Korean | [![Download PDF](https://img.shields.io/badge/Download-PDF-red?style=for-the-badge)](https://eunki-7.github.io/resume_ko/resume.pdf) |
+| 🇺🇸 English | [![Download PDF](https://img.shields.io/badge/Download-PDF-blue?style=for-the-badge)](https://eunki-7.github.io/resume_en/resume.pdf) |
+| 🌍 Other | ![Coming Soon](https://img.shields.io/badge/PDF-Coming%20Soon-lightgrey?style=for-the-badge) |
 
-```html
-<a href="/resume.pdf" download>
-  <img src="https://img.shields.io/badge/Download-PDF-red?style=for-the-badge" />
-</a>
-```
-
-PDF can be created manually or using `puppeteer`, `wkhtmltopdf`, or GitHub Actions workflow.
 
 ---
 
