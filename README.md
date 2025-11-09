@@ -131,6 +131,19 @@ Outputs static HTML inside `/app/docs`
 
 ---
 
+### ✅ Deploy on HuggingFace Spaces(Optional)
+
+You can host this resume on HuggingFace Spaces without GitHub Pages.
+
+1. Create new Space → Select “Static”
+2. Upload `docs/en` (or `docs/ko`)
+3. Spaces will automatically deploy the resume as a static site.
+
+Example URL:
+https://huggingface.co/spaces/<username>/<space-name>
+
+---
+
 ## ✅ CI/CD – GitHub Actions
 
 This project includes a fully automated deployment pipeline.
