@@ -17,7 +17,6 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@v3
 
-      # ✅ 혹시 남아 있는 docs 삭제
       - name: Clean docs
         run: sudo rm -rf docs
 
@@ -28,6 +27,12 @@ jobs:
           docker cp resume_container:/app/docs ./docs
           docker rm resume_container
 
+      - name: Generate PDF
+        run: |
+          npm install puppeteer --no-save
+          node scripts/generate-pdf.js ko
+          node scripts/generate-pdf.js en
+
       - name: Check docs content
         run: ls -R docs
 
@@ -37,12 +42,9 @@ jobs:
           git init
           git config --global user.email "actions@github.com"
           git config --global user.name "GitHub Actions"
-          # git checkout -b sub_ko
           git branch -M main
           git add .
           git commit -m "deploy: ko" || echo "No changes"
-          
-          # git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
           git remote add origin https://x-access-token:${{ secrets.KO_REPO_TOKEN }}@github.com/eunki-7/resume_ko.git
           git push -u origin main --force
 
@@ -52,11 +54,8 @@ jobs:
           git init
           git config --global user.email "actions@github.com"
           git config --global user.name "GitHub Actions"
-          # git checkout -b sub_en
           git branch -M main
           git add .
           git commit -m "deploy: en" || echo "No changes"
-
-          # git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
           git remote add origin https://x-access-token:${{ secrets.EN_REPO_TOKEN }}@github.com/eunki-7/resume_en.git
           git push -u origin main --force
