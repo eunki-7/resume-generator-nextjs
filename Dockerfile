@@ -21,6 +21,10 @@ RUN rm -rf .next
 # build English
 RUN npm run build:en
 
+# Generate PDF Files
+RUN npm run pdf:ko
+RUN npm run pdf:en
+
 RUN chown -R 1000:1000 /app/docs
 
 CMD ["echo", "✅ Build complete"]
