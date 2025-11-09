@@ -1,5 +1,10 @@
 
 <div align="center">
+  <!-- ⭐ Star Button -->
+  <a href="https://github.com/eunki-7/resume-generator-nextjs/stargazers">
+    <img src="https://img.shields.io/badge/⭐_Star-Repository-blue?style=for-the-badge" />
+  </a>
+  
   <h2><b>Next.js Static Resume / CV Generator (Multi-Language | Developer Portfolio)</b></h2>
   <p>📌 A modern static resume & CV template built with Next.js and TypeScript — supports Korean, English, and any additional languages from a single codebase.</p>
   <p>✅ Docker Build • ✅ GitHub Actions CI/CD • ✅ Deploy to GitHub Pages • ✅ Perfect for Developer Portfolios</p>
@@ -131,7 +136,7 @@ Outputs static HTML inside `/app/docs`
 
 ---
 
-### ✅ Deploy on HuggingFace Spaces(Optional)
+### ✅ Deploy on HuggingFace Spaces (Optional)
 
 You can host this resume on HuggingFace Spaces without GitHub Pages.
 
