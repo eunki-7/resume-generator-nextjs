@@ -1,46 +1,14 @@
 import { ISkill } from '../component/skill/ISkill';
 
-const areasOfExpertise: ISkill.Skill = {
-  category: 'Areas Of Expertise',
+const aimlEngineering: ISkill.Skill = {
+  category: 'AI/ML Engineering & Architecture',
   items: [
     {
       title: 'NLP(LAG & LLM)',
       level: 2,
     },
     {
-      title: 'AIaaS',
-      level: 3,
-    },
-    {
-      title: 'Software Prototyping',
-      level: 3,
-    },
-    {
-      title: 'AI Engineering',
-      level: 2,
-    },
-    {
-      title: 'Service Mesh',
-      level: 3,
-    },
-    {
-      title: 'FinOps',
-      level: 3,
-    },
-    {
-      title: 'MLOps',
-      level: 3,
-    },
-    {
-      title: 'DevOps',
-      level: 2,
-    },
-    {
-      title: 'Technical Writer',
-      level: 3,
-    },
-    {
-      title: 'Model Serving',
+      title: 'AI Engineering, AIaaS',
       level: 3,
     },
     {
@@ -48,18 +16,34 @@ const areasOfExpertise: ISkill.Skill = {
       level: 3,
     },
     {
-      title: 'Team Leadership',
+      title: 'Model Serving',
       level: 3,
     },
     {
-      title: 'SRE',
+      title: 'Software Prototyping',
+      level: 3,
+    },
+    {
+      title: 'SRE, Service Mesh',
+      level: 3,
+    },
+    {
+      title: 'FinOps',
       level: 2,
+    },
+    {
+      title: 'MLOps, DevOps',
+      level: 2,
+    },
+    {
+      title: 'Technical Writer',
+      level: 3,
     },
   ],
 };
 
 const projectManagement: ISkill.Skill = {
-  category: 'Project Management',
+  category: 'Project Management & Leadership',
   items: [
     {
       title: 'Project Management',
@@ -74,11 +58,7 @@ const projectManagement: ISkill.Skill = {
       level: 2,
     },
     {
-      title: 'Agile & Waterfall',
-      level: 2,
-    },
-    {
-      title: 'Scrum',
+      title: 'Agile, Waterfall, Scrum',
       level: 2,
     },
     {
@@ -86,7 +66,7 @@ const projectManagement: ISkill.Skill = {
       level: 2,
     },
     {
-      title: 'Cross LeaderShip',
+      title: 'Team(Cross) LeaderShip',
       level: 3,
     },
   ],
@@ -107,6 +87,38 @@ const cloudPlatform: ISkill.Skill = {
       title: 'GCP',
       level: 2,
     },
+    {
+      title: 'Migration, Modernization',
+      level: 3,
+    },
+    {
+      title: 'Cost Optimization',
+      level: 3,
+    },
+    {
+      title: 'AI Computing',
+      level: 3,
+    },
+    {
+      title: 'Control Tower',
+      level: 2,
+    },
+    {
+      title: 'Security, Compliance',
+      level: 3,
+    },
+    {
+      title: 'Containers',
+      level: 2,
+    },
+    {
+      title: 'Database',
+      level: 2,
+    },
+    {
+      title: 'Redshift',
+      level: 2,
+    },
   ],
 };
 
@@ -114,11 +126,11 @@ const programmingLanguages: ISkill.Skill = {
   category: 'Languages',
   items: [
     {
-      title: 'Prompt Engineering',
+      title: 'Python',
       level: 3,
     },
     {
-      title: 'Python',
+      title: 'Prompt Engineering',
       level: 3,
     },
     {
@@ -126,23 +138,7 @@ const programmingLanguages: ISkill.Skill = {
       level: 2,
     },
     {
-      title: 'C',
-      level: 2,
-    },
-    {
-      title: 'Java',
-      level: 2,
-    },
-    {
-      title: 'Golang',
-      level: 3,
-    },
-    {
-      title: 'Rust',
-      level: 2,
-    },
-    {
-      title: 'R',
+      title: 'Java, C, Golang, Rust',
       level: 2,
     },
     {
@@ -168,58 +164,12 @@ const managementTools: ISkill.Skill = {
       level: 2,
     },
     {
-      title: 'Trello',
-      level: 1,
-    },
-    {
       title: 'Notion',
       level: 3,
     },
     {
       title: 'Teams',
       level: 1,
-    },
-  ],
-};
-
-const amazonWebService: ISkill.Skill = {
-  category: 'AWS Expert',
-  items: [
-    {
-      title: 'Migration, Modernization',
-      level: 3,
-    },
-    {
-      title: 'Cost Optimization',
-      level: 3,
-    },
-    {
-      title: 'AI Computing',
-      level: 3,
-    },
-    {
-      title: 'Billing(Financial)',
-      level: 3,
-    },
-    {
-      title: 'Control Tower',
-      level: 2,
-    },
-    {
-      title: 'Security, Compliance',
-      level: 3,
-    },
-    {
-      title: 'Containers',
-      level: 2,
-    },
-    {
-      title: 'Database',
-      level: 1,
-    },
-    {
-      title: 'Redshift',
-      level: 2,
     },
   ],
 };
@@ -232,11 +182,7 @@ const virtualization: ISkill.Skill = {
       level: 3,
     },
     {
-      title: 'KVM',
-      level: 2,
-    },
-    {
-      title: 'VirtualBox',
+      title: 'VirtualBox, KVM',
       level: 2,
     },
     {
@@ -254,23 +200,15 @@ const automation: ISkill.Skill = {
       level: 3,
     },
     {
-      title: 'Ansible',
+      title: 'Terraform, Ansible',
       level: 2,
     },
     {
-      title: 'Terraform',
-      level: 3,
-    },
-    {
-      title: 'Puppet',
+      title: 'Kibana, Puppet',
       level: 1,
     },
     {
-      title: 'Jenkins',
-      level: 3,
-    },
-    {
-      title: 'ArgoCD',
+      title: 'Jenkins, ArgoCD',
       level: 3,
     },
     {
@@ -282,27 +220,15 @@ const automation: ISkill.Skill = {
       level: 2,
     },
     {
-      title: 'Prometheus ',
+      title: 'Grafana, Prometheus ',
       level: 2,
-    },
-    {
-      title: 'Grafana ',
-      level: 2,
-    },
-    {
-      title: 'Kibana ',
-      level: 1,
     },
   ],
 };
 
 const networkSkills: ISkill.Skill = {
-  category: 'Network Skills',
+  category: 'Network Skills & HPC',
   items: [
-    {
-      title: 'Security',
-      level: 3,
-    },
     {
       title: 'GPUDirect RDMA',
       level: 3,
@@ -316,11 +242,7 @@ const networkSkills: ISkill.Skill = {
       level: 3,
     },
     {
-      title: 'Iptables',
-      level: 2,
-    },
-    {
-      title: 'OpenSSH',
+      title: 'Iptables, OpenSSH',
       level: 2,
     },
     {
@@ -359,11 +281,10 @@ const skill: ISkill.Payload = {
   disable: false,
   skills: [
     projectManagement,
+    aimlEngineering,
     cloudPlatform,
-    areasOfExpertise,
     programmingLanguages,
     managementTools,
-    amazonWebService,
     virtualization,
     automation,
     networkSkills,

@@ -1,193 +1,79 @@
 import { ISkill } from '../component/skill/ISkill';
 
 const aimlEngineering: ISkill.Skill = {
-  category: 'AI/ML Engineering & Architecture',
+  category: 'AI & Accelerated Computing',
   items: [
     {
-      title: 'NLP(LAG & LLM)',
-      level: 2,
-    },
-    {
-      title: 'AI Engineering, AIaaS',
+      title: 'LLM & Generative AI',
       level: 3,
     },
     {
-      title: 'Accelerated Computing',
+      title: 'AIaaS & Enterprise MLOps',
       level: 3,
     },
     {
-      title: 'Model Serving',
+      title: 'Accelerated Computing (GPU/HPC)',
       level: 3,
     },
     {
-      title: 'Software Prototyping',
+      title: 'Model Serving & AI Platforms',
       level: 3,
     },
     {
-      title: 'SRE, Service Mesh',
-      level: 3,
-    },
-    {
-      title: 'FinOps',
-      level: 2,
-    },
-    {
-      title: 'MLOps, DevOps',
-      level: 2,
-    },
-    {
-      title: 'Technical Writer',
+      title: 'AI Platform Strategy',
       level: 3,
     },
   ],
 };
 
 const projectManagement: ISkill.Skill = {
-  category: 'Project Management & Leadership',
+  category: 'Leadership & Program Governance',
   items: [
     {
-      title: 'Project Management',
-      level: 3,
-    },
-    {
-      title: 'IT Infrastructure',
-      level: 3,
-    },
-    {
-      title: 'Project Planning',
-      level: 2,
-    },
-    {
-      title: 'Agile, Waterfall, Scrum',
-      level: 2,
-    },
-    {
       title: 'Stakeholder Management',
-      level: 2,
+      level: 3,
     },
     {
-      title: 'Team(Cross) LeaderShip',
+      title: 'Enterprise Architecture Governance',
       level: 3,
+    },
+    {
+      title: 'Cross-Functional Team Leadership',
+      level: 3,
+    },
+    {
+      title: 'Program & Delivery Governance',
+      level: 3,
+    },
+    {
+      title: 'Technical Strategy & Documentation',
+      level: 2,
     },
   ],
 };
 
 const cloudPlatform: ISkill.Skill = {
-  category: 'Cloud Platform',
+  category: 'Cloud & Enterprise Architecture',
   items: [
     {
-      title: 'AWS',
+      title: 'AWS, Azure, GCP',
       level: 3,
     },
     {
-      title: 'Azure',
+      title: 'Migration & Modernization',
       level: 3,
     },
     {
-      title: 'GCP',
+      title: 'Cloud Governance & Security',
       level: 2,
     },
     {
-      title: 'Migration, Modernization',
+      title: 'Cost Optimization & FinOps',
       level: 3,
     },
     {
-      title: 'Cost Optimization',
+      title: 'Hybrid & Multi-Cloud Architecture',
       level: 3,
-    },
-    {
-      title: 'AI Computing',
-      level: 3,
-    },
-    {
-      title: 'Control Tower',
-      level: 2,
-    },
-    {
-      title: 'Security, Compliance',
-      level: 3,
-    },
-    {
-      title: 'Containers',
-      level: 2,
-    },
-    {
-      title: 'Database',
-      level: 2,
-    },
-    {
-      title: 'Redshift',
-      level: 2,
-    },
-  ],
-};
-
-const programmingLanguages: ISkill.Skill = {
-  category: 'Languages',
-  items: [
-    {
-      title: 'Python',
-      level: 3,
-    },
-    {
-      title: 'Prompt Engineering',
-      level: 3,
-    },
-    {
-      title: 'Shell Scripting',
-      level: 2,
-    },
-    {
-      title: 'Java, C, Golang, Rust',
-      level: 2,
-    },
-    {
-      title: 'TypeScript',
-      level: 2,
-    },
-  ],
-};
-
-const managementTools: ISkill.Skill = {
-  category: 'Team & Management',
-  items: [
-    {
-      title: 'Slack',
-      level: 3,
-    },
-    {
-      title: 'Asana',
-      level: 3,
-    },
-    {
-      title: 'Jira',
-      level: 2,
-    },
-    {
-      title: 'Notion',
-      level: 3,
-    },
-    {
-      title: 'Teams',
-      level: 1,
-    },
-  ],
-};
-
-const virtualization: ISkill.Skill = {
-  category: 'Virtualization',
-  items: [
-    {
-      title: 'Docker',
-      level: 3,
-    },
-    {
-      title: 'VirtualBox, KVM',
-      level: 2,
-    },
-    {
-      title: 'VMware ESXi',
-      level: 1,
     },
   ],
 };
@@ -196,83 +82,24 @@ const automation: ISkill.Skill = {
   category: 'Automation & Monitoring',
   items: [
     {
-      title: 'Git & GitOps',
+      title: 'Containers & Service Mesh',
       level: 3,
     },
     {
-      title: 'Terraform, Ansible',
+      title: 'Operational Governance',
+      level: 3,
+    },
+    {
+      title: 'CI/CD & GitOps',
       level: 2,
-    },
-    {
-      title: 'Kibana, Puppet',
-      level: 1,
-    },
-    {
-      title: 'Jenkins, ArgoCD',
-      level: 3,
-    },
-    {
-      title: 'CI/CD Pipelines',
-      level: 3,
     },
     {
       title: 'Infrastructure as Code',
-      level: 2,
-    },
-    {
-      title: 'Grafana, Prometheus ',
-      level: 2,
-    },
-  ],
-};
-
-const networkSkills: ISkill.Skill = {
-  category: 'Network Skills & HPC',
-  items: [
-    {
-      title: 'GPUDirect RDMA',
       level: 3,
     },
     {
-      title: 'EFA & NCCL',
+      title: 'Observability & Reliability Engineering',
       level: 3,
-    },
-    {
-      title: 'GPU Performance',
-      level: 3,
-    },
-    {
-      title: 'Iptables, OpenSSH',
-      level: 2,
-    },
-    {
-      title: 'OpenSSL',
-      level: 2,
-    },
-    {
-      title: 'VPN Technologies',
-      level: 1,
-    },
-  ],
-};
-
-const misc: ISkill.Skill = {
-  category: 'Misc',
-  items: [
-    {
-      title: 'Playing Musical Instruments',
-    },
-    {
-      title: 'Hiking',
-    },
-    {
-      title: 'Gaming',
-    },
-    {
-      title: 'Retro Game Collecting',
-    },
-    {
-      title: 'Listening to music',
     },
   ],
 };
@@ -283,12 +110,7 @@ const skill: ISkill.Payload = {
     projectManagement,
     aimlEngineering,
     cloudPlatform,
-    programmingLanguages,
-    managementTools,
-    virtualization,
     automation,
-    networkSkills,
-    misc,
   ],
   tooltip: '1: Beginner\n2: Intermediate\n3: Expert',
 };
