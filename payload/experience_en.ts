@@ -466,7 +466,7 @@ const experience: IExperience.Payload = {
           projectDetail: [
             'Built and managed the Seoul Association of the Disabled website, overseeing ongoing operations and maintenance',
             'Enhanced PHP/WordPress-based e-commerce platforms, including feature improvements and administrative interface development',
-            'Configured and managed Linux/Apache server environments, maintaining operational automation scripts',
+            '<b>Configured and managed Linux/Apache server environments, maintaining operational automation scripts</b>',
           ],
         },
       ],

@@ -631,7 +631,7 @@ const experience: IExperience.Payload = {
           projectDetail: [
             'NCS 기반 IT 직무 교육과정 기획 및 커리큘럼 구성, 과정 운영 지원',
             'OA, 웹 프로그래밍, Flash·ActionScript 등 실무 중심 강의 진행 (신촌, 노원, 수원 캠퍼스)',
-            '<b>주중 야간 및 주말 과정 운영, 프로젝트 기반 실습 중심 수업 진행',
+            '<b>주중 야간 및 주말 과정 운영, 프로젝트 기반 실습 중심 수업 진행</b>',
           ],
         },
       ],
