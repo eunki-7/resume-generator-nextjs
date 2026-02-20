@@ -210,16 +210,16 @@ const openSource: IOpenSource.Payload = {
           content: 'AWS Certified Cloud Practitioner',
         },
         {
-          content: 'Oracle Certified Java Programmer (OCJP)',
+          content: '데이터아키텍처준전문가 (DAsP)',
+        },
+        {
+          content: 'SQL개발자 (SQLD)',
         },
         {
           content: '정보처리기사',
         },
         {
-          content: '데이터아키텍처준전문가 (DAsP)',
-        },
-        {
-          content: 'SQL개발자 (SQLD)',
+          content: 'Oracle Certified Java Programmer (OCJP)',
         },
         {
           content: '리눅스마스터 2급',

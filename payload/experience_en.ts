@@ -462,15 +462,15 @@ const experience: IExperience.Payload = {
       endedAt: '2012-12',
       descriptions: [
         {
-          projectName: 'Web Service Operations & Maintenance',
+          projectName: 'Developed and maintained JSP- and PHP-based web services',
           projectDetail: [
-            'Developed and maintained JSP- and PHP-based websites, including the Seoul Disabled Association portal',
-            'Operated and enhanced WordPress-based e-commerce platforms with admin tools and feature updates',
-            'Managed server infrastructure setup using Linux and Apache, including scripting for automation tasks',
+            'Built and managed the Seoul Association of the Disabled website, overseeing ongoing operations and maintenance',
+            'Enhanced PHP/WordPress-based e-commerce platforms, including feature improvements and administrative interface development',
+            'Configured and managed Linux/Apache server environments, maintaining operational automation scripts',
           ],
         },
       ],
-      skillKeywords: ['JSP, PHP', 'Oracle9i, MySQL', 'HTML5', ' Javascript', 'Linux, Apache'],
+      skillKeywords: ['JSP, PHP', 'Oracle9i, MySQL', 'HTML5, Javascript', 'Linux, Apache'],
     },
     {
       title: 'HiMedia Academy',
@@ -479,15 +479,16 @@ const experience: IExperience.Payload = {
       endedAt: '2012-02',
       descriptions: [
         {
-          projectName: 'HiMedia Academy - Freelance IT Instructor & Curriculum Designer',
+          projectName: 'HiMedia Academy – IT Instructor (Freelance)',
           projectDetail: [
-            'Designed and delivered NCS-based IT training programs, including curriculum development and class planning',
-            'Taught OA, web programming, and Flash courses across locations including Shinchon, Nowon, and Suwon',
-            'Conducted evening and <b>weekend classes focused on practical</b>, job-oriented instruction',
+            'Designed and delivered NCS-based IT training programs, including curriculum development and course planning',
+            'Taught OA, web programming, and Flash/ActionScript courses across multiple campuses (Shinchon, Nowon, Suwon)',
+            'Conducted evening and weekend classes with a focus on hands-on, job-oriented practical instruction',
+            '<b>Supported program operations and student project guidance to enhance applied technical competencies</b>',
           ],
         },
       ],
-      skillKeywords: ['HTML5', 'OA', 'Flash', 'ActionScript', 'NCS'],
+      skillKeywords: ['HTML5', 'OA', 'Flash/ActionScript', 'NCS 기반 교육과정 설계'],
     },
   ],
 };
