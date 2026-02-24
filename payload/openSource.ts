@@ -4,62 +4,6 @@ const openSource: IOpenSource.Payload = {
   disable: false,
   list: [
     {
-      title: 'Pytube',
-      descriptions: [
-        {
-          content:
-            'Contributed to pytube, a lightweight, dependency-free Python library and CLI tool for downloading YouTube videos',
-        },
-        { content: 'Contributor' },
-        {
-          content: 'https://github.com/pytube/pytube',
-          href: 'https://github.com/pytube/pytube',
-        },
-        {
-          content: 'Github Stars: ',
-          postImage: 'https://img.shields.io/github/stars/pytube/pytube.svg?style=popout',
-        },
-      ],
-    },
-    {
-      title: 'Amazon-Bedrock-Hand-On-Lab',
-      descriptions: [
-        {
-          content:
-            'Contributed to SageMaker Example Notebooks, showcasing how to build, train, and deploy machine learning models using Amazon SageMaker',
-        },
-        { content: 'Contributor' },
-        {
-          content: 'https://github.com/son-kjun/bedrock-workshop',
-          href: 'https://github.com/son-kjun/bedrock-workshop',
-        },
-        {
-          content: 'Github Stars: ',
-          postImage:
-            'https://img.shields.io/github/stars/aws/amazon-sagemaker-examples?style=popout',
-        },
-      ],
-    },
-    {
-      title: 'Amazon-sagemaker-examples',
-      descriptions: [
-        {
-          content:
-            'Contributed to example notebooks demonstrating how to build, train, and deploy machine learning models using Amazon SageMaker',
-        },
-        { content: 'Contributor' },
-        {
-          content: 'https://github.com/aws/amazon-sagemaker-examples',
-          href: 'https://github.com/aws/amazon-sagemaker-examples',
-        },
-        {
-          content: 'Github Stars: ',
-          postImage:
-            'https://img.shields.io/github/stars/aws/amazon-sagemaker-examples?style=popout',
-        },
-      ],
-    },
-    {
       title: 'LLM-RDMA-MLOps-Lab',
       descriptions: [
         {
@@ -97,25 +41,6 @@ const openSource: IOpenSource.Payload = {
       ],
     },
     {
-      title: 'Music2Sheet-MLOps Version',
-      descriptions: [
-        {
-          content:
-            'Architected and led development of an enterprise-grade AI pipeline converting music audio to sheet music using Hugging Face pretrained models, FastAPI inference service, and fully automated CI/CD (Docker + GitHub Actions).',
-        },
-        { content: 'Owner' },
-        {
-          content: 'https://github.com/eunki-7/music2sheet-mlops',
-          href: 'https://github.com/eunki-7/music2sheet-mlops',
-        },
-        {
-          content: 'Github Stars: ',
-          postImage:
-            'https://img.shields.io/github/stars/eunki-7/music2sheet-mlops.svg?style=popout',
-        },
-      ],
-    },
-    {
       title: 'MCP Auto-Router Chatbot-MLOps Version',
       descriptions: [
         {
@@ -131,6 +56,25 @@ const openSource: IOpenSource.Payload = {
           content: 'Github Stars: ',
           postImage:
             'https://img.shields.io/github/stars/eunki-7/mcp-auto-router-chatbot-mlops.svg?style=popout',
+        },
+      ],
+    },
+    {
+      title: 'Music2Sheet-MLOps Version',
+      descriptions: [
+        {
+          content:
+            'Architected and led development of an enterprise-grade AI pipeline converting music audio to sheet music using Hugging Face pretrained models, FastAPI inference service, and fully automated CI/CD (Docker + GitHub Actions).',
+        },
+        { content: 'Owner' },
+        {
+          content: 'https://github.com/eunki-7/music2sheet-mlops',
+          href: 'https://github.com/eunki-7/music2sheet-mlops',
+        },
+        {
+          content: 'Github Stars: ',
+          postImage:
+            'https://img.shields.io/github/stars/eunki-7/music2sheet-mlops.svg?style=popout',
         },
       ],
     },
@@ -188,6 +132,63 @@ const openSource: IOpenSource.Payload = {
           content: 'Github Stars: ',
           postImage:
             'https://img.shields.io/github/stars/eunki-7/wav2vec-flan-sql-portfolio.svg?style=popout',
+        },
+      ],
+    },
+    
+    {
+      title: 'Amazon-Bedrock-Hand-On-Lab',
+      descriptions: [
+        {
+          content:
+            'Contributed to SageMaker Example Notebooks, showcasing how to build, train, and deploy machine learning models using Amazon SageMaker',
+        },
+        { content: 'Contributor' },
+        {
+          content: 'https://github.com/son-kjun/bedrock-workshop',
+          href: 'https://github.com/son-kjun/bedrock-workshop',
+        },
+        {
+          content: 'Github Stars: ',
+          postImage:
+            'https://img.shields.io/github/stars/aws/amazon-sagemaker-examples?style=popout',
+        },
+      ],
+    },
+    {
+      title: 'Amazon-sagemaker-examples',
+      descriptions: [
+        {
+          content:
+            'Contributed to example notebooks demonstrating how to build, train, and deploy machine learning models using Amazon SageMaker',
+        },
+        { content: 'Contributor' },
+        {
+          content: 'https://github.com/aws/amazon-sagemaker-examples',
+          href: 'https://github.com/aws/amazon-sagemaker-examples',
+        },
+        {
+          content: 'Github Stars: ',
+          postImage:
+            'https://img.shields.io/github/stars/aws/amazon-sagemaker-examples?style=popout',
+        },
+      ],
+    },
+    {
+      title: 'Pytube',
+      descriptions: [
+        {
+          content:
+            'Contributed to pytube, a lightweight, dependency-free Python library and CLI tool for downloading YouTube videos',
+        },
+        { content: 'Contributor' },
+        {
+          content: 'https://github.com/pytube/pytube',
+          href: 'https://github.com/pytube/pytube',
+        },
+        {
+          content: 'Github Stars: ',
+          postImage: 'https://img.shields.io/github/stars/pytube/pytube.svg?style=popout',
         },
       ],
     },
