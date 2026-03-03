@@ -1,7 +1,7 @@
 import profile from './profile';
 // import profile from './profile_en';
-import introduce from './introduce';
-// import introduce from './introduce_en';
+// import introduce from './introduce';
+import introduce from './introduce_en';
 import skill from './skill';
 import experience from './experience';
 // import experience from './experience_en';

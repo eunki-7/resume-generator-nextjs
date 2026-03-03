@@ -4,14 +4,15 @@ import { lastestUpdatedAt } from '../package.json';
 const introduce: IIntroduce.Payload = {
   disable: false,
   contents: [
-    '<b>AI & Cloud Strategy Architect & Technology Leader | LLM · GenAI · MLOps · HPC Infrastructure | Enterprise & Financial AI Programs</b>',
-    'With over 16 years of development experience and senior platform architecture leadership, I have defined cloud-based AI/ML architectures (AIaaS) and MLOps operating models while setting organization-level technology transition directions.',
-    'Beyond technical execution, I focus on aligning cloud and AI initiatives with digital transformation strategies and ensuring architectural coherence at scale.',
-    'Across finance, telecommunications, manufacturing, and public sectors, I have established AI service roadmaps and cloud architecture standards, shaping structures that span the full service lifecycle—from planning and architecture to operations.',
-    'I have led initiatives requiring strategic technical judgment, including large-scale Generative AI (LLM) training environments, data lake architectures, and enterprise MLOps evolution, balancing both technical and operational considerations.',
-    'At AWS, I worked with enterprise clients such as Samsung Electronics to define cloud operating strategies, security governance frameworks, and service complexity-reduction roadmaps. From a FinOps perspective, I analyzed organization-wide cost structures and established operating principles that balanced efficiency with stability.',
-    'I have strengthened service operating models and quality and issue-management processes, aligning mid- to long-term objectives and facilitating stakeholder consensus to secure execution discipline.',
-    '<b>By connecting technology decisions with business strategy, I have established architectural foundations that support scalable and stable AI- and cloud-based services across the organization.</b>',
+    '<b>AI & Cloud Strategy Architect & Technology Leader | LLM · GenAI · MLOps · HPC Infrastructure | Enterprise AI Transformation Leadership</b>',
+    'With over 16 years of experience in development and platform architecture, I am a senior architect who has designed AI and cloud transformation strategies within enterprise environments.',
+    'Beyond technical design, I have structured AIaaS architecture models and MLOps operating frameworks, shaping organization-level technology direction and execution standards.',
+    'Across finance, telecommunications, manufacturing, and public sectors, I have defined AI service roadmaps and cloud reference architectures, overseeing structures that span the full lifecycle—from planning and architecture to operations.',
+    'I have led initiatives requiring strategic technical judgment, including Generative AI–based LLM training infrastructures, large-scale data lake architectures, and enterprise MLOps evolution, balancing technical feasibility with long-term operational sustainability.',
+    'During my time at AWS, I worked with enterprise clients such as Samsung Electronics to systematize cloud operating strategies and security governance frameworks, and to develop mid- to long-term roadmaps to reduce service complexity.',
+    'From a FinOps perspective, I analyzed organization-wide cost structures and established operating standards that balanced efficiency and stability.',
+    'I strengthened service quality management and issue response processes, aligning stakeholder decision-making to ensure disciplined execution.',
+    '<b>Beyond implementation, I design operational structures and decision frameworks that enable organizations to scale AI- and cloud-based services in a stable and sustainable manner.</b>',
     
     // '2026-02-19(수정)',
     // '<br/><br/>',
