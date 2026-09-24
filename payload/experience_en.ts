@@ -5,6 +5,33 @@ const experience: IExperience.Payload = {
   disableTotalPeriod: false,
   list: [
     {
+      title: 'Tommoro Robotics',
+      position: 'MLOps Director',
+      startedAt: '2026-05',
+      descriptions: [
+        {
+          projectName: '',
+          projectDetail: [
+            'Directed Robotics Data Infrastructure, AI Platform Engineering, and MLOps Operations',
+            'Led scalable robotics data platform architecture and AI infrastructure initiatives',
+            'Architected an episode-based robotics data lake capturing ROS2 telemetry, robot joint trajectories, sensor streams, and operational events from 300+ robotic cells for AI training and analytics',
+            'Led cloud infrastructure strategy and large-scale data storage architecture for robotics AI workloads',
+            'Led cross-functional engineering collaboration, team building, and platform integration initiatives across AI, robotics, and software engineering teams',
+          ],
+        },
+      ],
+      skillKeywords: [
+        'AWS Architecture & Governance',
+        'Physical AI Platforms',
+        'Enterprise MLOps',
+        'Cloud Cost Optimization (FinOps)',
+        'Accelerated Computing & GPU Clusters (HPC)',
+        'Robotics Big Data Platforms',
+        'DevOps Automation & Observability',
+        'Cross-Functional Leadership & Stakeholder Alignment',
+      ],
+    },
+    {
       title: 'Amazon Web Service(AWS)',
       position: 'Technical Account Manager',
       startedAt: '2022-12',
